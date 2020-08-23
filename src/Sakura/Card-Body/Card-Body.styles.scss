@@ -1,0 +1,9 @@
+@import '../sakura_design/sakura.scss';
+
+.sakura__card--body {
+	margin-top: -10px;
+	padding: 2.5em;
+	color: $sakura-dark;
+	font-family: $body-font;
+	font-weight: 300;
+}

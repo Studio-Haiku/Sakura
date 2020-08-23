@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@400;500;700&display=swap');
+// colors
+$sakura-white: #FCFCFF;
+$sakura-primary: #F8333C;
+$sakura-secondary: #006BA6;
+$sakura-purple: #AA7DCE;
+$sakura-darkest: #231F20;
+$sakura-dark: #242038; 
+
+// shadows todo
+
+// fonts
+$body-font: 'Poppins', sans-serif;
+$title-font: 'Teko', sans-serif;
+
+$sakura-btn-radius: 5px;
+$sakura-card-radius: 10px;
+
+$breakpoint-phone: 768px;
+
+
+* { 
+    letter-spacing: 0.05em;
+    line-height: 21px;
+}
+
+html, body {
+    font-family: $body-font;
+    font-weight: 300;
+}

@@ -1,0 +1,112 @@
+@import '../sakura_design/sakura.scss';
+
+/**
+  * DEFAULT BUTTON
+  */
+
+.btn {
+	font-family: $body-font;
+	text-transform: uppercase;
+	font-weight: bold;
+	border: none;
+	color: $sakura-white;
+  border-radius: $sakura-btn-radius;
+  background-position: center;
+  transition: background 0.8s;
+	outline: none !important;
+  line-height: 27px;
+  span {
+    margin-right: 15px;
+  }
+	&:hover {
+    background: $sakura-primary radial-gradient(circle, transparent 1%, $sakura-primary 1%) center/15000%;
+		cursor: pointer;
+  }
+  &:active {
+    background-color: rgba(255,255,255,.9);
+    background-size: 100%;
+    transition: background 0s;
+  }
+}
+
+@keyframes ripple {
+    from {
+      opacity: 1;
+      transform: scale(0);
+    }
+    to {
+      opacity: 0;
+      transform: scale(10);
+    }
+  }
+
+/**
+  * BUTTON COLORS
+  */
+
+.btn-primary {
+	background-color: $sakura-primary;
+}
+
+.btn-secondary {
+	background-color: $sakura-secondary;
+	&:hover {
+    background: $sakura-secondary radial-gradient(circle, transparent 1%, $sakura-secondary 1%) center/15000%;
+		cursor: pointer;
+  }
+  &:active {
+    background-color: rgba(255,255,255,.9);
+    background-size: 100%;
+    transition: background 0s;
+  }
+}
+
+.btn-empty {
+    background-color: rgba(0,0,0,.1);
+    color: $sakura-dark;
+    filter: none !important;
+
+	&:hover {
+    background: rgba(0,0,0,.1) radial-gradient(circle, transparent 1%, rgba(0,0,0,.1) 1%) center/15000%;
+		cursor: pointer;
+  }
+  &:active {
+    background-color: rgba(0,0,0,.2);
+    background-size: 100%;
+    transition: background 0s;
+  }
+}
+
+/**
+  * BUTTON SIZES
+  */
+
+.btn-size-default, .btn-size-block {
+    padding: .5em 1.2em;
+    font-size: 14px;
+    filter: drop-shadow(0px 1px 1px rgba(0,0,0,0.5));
+}
+
+.btn-size-small {
+    filter: drop-shadow(0px 1px 1px rgba(0,0,0,0.5));
+    padding: .6em 1.3em;
+    font-size: 8px;
+    text-transform: lowercase;
+}
+
+.btn-size-big {
+    filter: drop-shadow(0px 1px 1px rgba(0,0,0,0.5));
+    padding:  .8em 3em;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.btn-size-block {
+    width: 100%;
+}
+
+@media (max-width: $breakpoint-phone) {
+    .btn-size-default, .btn-size-big, .btn-size-small {
+        width: 100%;
+    }
+}

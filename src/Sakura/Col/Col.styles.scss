@@ -1,0 +1,7 @@
+@import '../sakura_design/sakura.scss';
+
+@media (max-width: $breakpoint-phone) {
+	.sakura__col {
+		grid-column: span 12 !important
+	}
+}

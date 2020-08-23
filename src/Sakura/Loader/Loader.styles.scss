@@ -1,0 +1,37 @@
+@import '../sakura_design/sakura.scss';
+
+.sakura__loader {
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 10px;
+    color: $sakura_darkest;
+    background-color: $sakura_white;
+    white-space: nowrap;
+    .helper {
+        text-align: center !important;
+        height: 100%;
+        .svgLogo {
+            width: 30%;
+            top: -120px;
+            max-width: 150px;
+        }
+        svg,img {
+            position: absolute;
+            top: -100px;
+            bottom: 0;
+            margin: auto;
+            left: 0;
+            right: 0;
+        }
+        svg {
+            top: 10%;
+        }
+        img {
+            width: 35%;
+        }
+    }
+};

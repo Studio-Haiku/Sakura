@@ -1,0 +1,64 @@
+@import '../sakura_design/sakura.scss';
+
+label {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.lbl {
+    font-family: $body-font;
+    font-size: 12px;
+    font-weight: 700;
+    font-style: normal;
+    width: inherit;
+    text-transform: lowercase;
+    position: absolute;
+    left: 0;
+    top: -.5em;
+    -webkit-transition: .2s ease all;
+    transition: .2s ease all;
+}
+
+.inpt::placeholder {
+    color: transparent;
+    text-transform: lowercase;
+    font-family: $body-font;
+    font-size: 12px;
+}
+
+.inpt {
+    margin-bottom: 1.5em;
+    margin-top: .5em;
+    color: $sakura-dark;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-family: $body-font;
+    font-weight: 500;
+    font-size: 16px;
+    transition: .2s cubic-bezier(.64,.09,.01,1) all;
+    -webkit-transition: .2s cubic-bezier(.64,.09,.01,1) all;
+}
+
+.inpt:focus, .inpt:valid {
+    & + .lbl {
+        top: -2em;
+    }
+    &::placeholder {
+        color: $sakura-dark;
+        opacity: 50%;
+    }
+}
+
+.inpt-border-default {
+    border-bottom: 1.5px solid $sakura-dark;
+}
+
+.inpt-border-default:focus, .inpt:valid {
+    & + .lbl {
+        color: $sakura-purple;
+    }
+    border-bottom: 1.5px solid $sakura-purple;
+}
+
