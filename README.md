@@ -1,8 +1,10 @@
 # Sakura 0.1.2-f Preview
-Componenti per lo sviluppo di applicazioni web React creati seguendo il design language creato da Studio Haiku per i suoi prodotti.
 
+## WARNING
+These components are not production ready yet. They are still a work in progress and will be updated frequently on a weekly basis.
 
-Questa è una versione di preview non completa, non ancora stabile e non ancora utilizzabile al 100%. Bug assicurati.
+### Preview & Docs
+(https://studio-haiku.github.io/Sakura)[https://studio-haiku.github.io/Sakura]
 
 ### INSTALL
 ```
